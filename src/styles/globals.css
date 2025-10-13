@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto:wght@400&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #3F2E22;
+  --card: #ffffff;
+  --card-foreground: #3F2E22;
+  --popover: #ffffff;
+  --popover-foreground: #3F2E22;
+  --primary: #3F2E22;
+  --primary-foreground: #ffffff;
+  --secondary: #BB6B5E;
+  --secondary-foreground: #ffffff;
+  --muted: #fcf9f8;
+  --muted-foreground: #8b7e78;
+  --accent: #e9ebef;
+  --accent-foreground: #3F2E22;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+  --ring: #BB6B5E;
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #ffffff;
+  --card: #1a1a1a;
+  --card-foreground: #ffffff;
+  --popover: #1a1a1a;
+  --popover-foreground: #ffffff;
+  --primary: #BB6B5E;
+  --primary-foreground: #ffffff;
+  --secondary: #3F2E22;
+  --secondary-foreground: #ffffff;
+  --muted: #2d1f1a;
+  --muted-foreground: #a1a1aa;
+  --accent: #404040;
+  --accent-foreground: #BB6B5E;
+  --destructive: #dc2626;
+  --destructive-foreground: #fecaca;
+  --border: #404040;
+  --input: #404040;
+  --ring: #BB6B5E;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      @apply text-2xl font-medium leading-relaxed;
+    }
+
+    h2 {
+      @apply text-xl font-medium leading-relaxed;
+    }
+
+    h3 {
+      @apply text-lg font-medium leading-relaxed;
+    }
+
+    h4 {
+      @apply text-base font-medium leading-relaxed;
+    }
+
+    p {
+      @apply text-base leading-relaxed;
+    }
+
+    label {
+      @apply text-base font-medium leading-relaxed;
+    }
+
+    button {
+      @apply text-base font-medium leading-relaxed;
+    }
+
+    input {
+      @apply text-base leading-relaxed;
+    }
+  }
+}
+
+/* Safari compatibility fixes */
+@supports not (color: oklch(0 0 0)) {
+  :root {
+    --popover: #ffffff;
+  }
+  
+  .dark {
+    --background: #1a1a1a;
+    --foreground: #ffffff;
+    --card: #1a1a1a;
+    --card-foreground: #ffffff;
+    --popover: #1a1a1a;
+    --popover-foreground: #ffffff;
+    --muted-foreground: #a1a1aa;
+    --accent: #404040;
+    --border: #404040;
+    --input: #404040;
+  }
+}
+
+/* Fallback for Aboreto font */
+.font-aboreto, [class*="font-[Aboreto]"] {
+  font-family: 'Aboreto', 'Georgia', 'Times New Roman', serif;
+}
+
+/* Ensure videos work in Safari */
+video, iframe {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Safari-specific iframe fixes */
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
