@@ -1,0 +1,146 @@
+/* Portfolio Section */
+.portfolio-section {
+  padding-top: 5rem;   /* py-20 */
+  padding-bottom: 5rem;
+  padding-left: 1rem;  /* px-4 */
+  padding-right: 1rem;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@media (min-width: 640px) {
+  .portfolio-section {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-section {
+    padding-left: 2rem; /* lg:px-8 */
+    padding-right: 2rem;
+  }
+}
+
+/* Center container with max width */
+.portfolio-container {
+  max-width: 1280px; /* Tailwind 7xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section Header */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.portfolio-header h2 {
+  font-family: 'Aboreto', serif;
+  font-weight: 400;
+  font-size: 1.875rem; /* 3xl */
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .portfolio-header h2 {
+    font-size: 2.25rem; /* sm:text-4xl */
+  }
+}
+
+/* Circular Category Buttons */
+.portfolio-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Portfolio Category Buttons */
+/* Portfolio Category Buttons */
+.portfolio-category-button {
+  border-radius: 9999px; /* fully circular */
+  padding: 0.75rem 1.5rem; /* vertical + horizontal padding */
+  font-size: 1.125rem; /* match Tailwind text-lg */
+  font-weight: 500; /* match Tailwind font-medium */
+  line-height: 1.75rem; /* comfortable spacing for text */
+  cursor: pointer;
+  border: 1px solid #D1D5DB; /* Tailwind gray-300 */
+  background-color: transparent;
+  color: var(--foreground);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap; /* prevent wrapping for small buttons */
+}
+
+.portfolio-category-button.active {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border-color: var(--secondary);
+}
+
+.portfolio-category-button:hover {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Portfolio Card */
+.portfolio-card {
+  background-color: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Video/Embed Container */
+.portfolio-card .portfolio-video-wrapper {
+  position: relative;
+  padding-top: 177.77%; /* 9/16 aspect ratio */
+  overflow: hidden;
+}
+
+.portfolio-card iframe,
+.portfolio-card video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+/* Safari fixes */
+@supports (-webkit-appearance: none) {
+  .portfolio-card iframe,
+  .portfolio-card video {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
