@@ -280,8 +280,7 @@ background-color: #ffffff; /* white */
 .equipment-description {
   color: #6b7280;
   line-height: 1.625;
-  margin-bottom: 1rem;
-}
+ }
 
 .equipment-capabilities {
   padding: 0 1.5rem 1.5rem 1.5rem;
@@ -291,8 +290,8 @@ background-color: #ffffff; /* white */
 }
 
 .capability-badge {
-  background-color: #BB6B5E;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #3F2E22;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.75rem;
@@ -313,4 +312,30 @@ background-color: #ffffff; /* white */
     padding-left: 2rem;
     padding-right: 2rem;
   }
+}
+.equipment-capabilities {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.capabilities-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3F2E22;
+  margin-bottom: 0.75rem; /* 12px */
+}
+
+.capabilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.capability-badge {
+   color: #3F2E22;
+  padding: 0.25rem 0.75rem;
+   font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 8px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+  display: inline-block;
 }

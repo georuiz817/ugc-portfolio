@@ -166,7 +166,7 @@ export function Services() {
   </div>
 </div>
 
-{/* Equipment Section */}
+{/* Equipment Section */}{/* Equipment Section */}
 <div className="equipment-section">
   <div className="equipment-header">
     <h3 className="equipment-title">Our Equipment</h3>
@@ -183,11 +183,14 @@ export function Services() {
           <p className="equipment-description">{item.description}</p>
         </CardHeader>
         <CardContent className="equipment-capabilities">
-          {item.capabilities.map((capability) => (
-            <Badge key={capability} className="capability-badge">
-              {capability}
-            </Badge>
-          ))}
+          <div className="capabilities-label">Capabilities:</div>
+          <div className="capabilities-list">
+            {item.capabilities.map((capability) => (
+              <Badge key={capability} className="capability-badge">
+                {capability}
+              </Badge>
+            ))}
+          </div>
         </CardContent>
       </Card>
     ))}
