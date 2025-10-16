@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 .services-section {
   background-color: #FCF9F8; /* light muted gray */
   padding: 5rem 1rem; /* approximate py-20 px-4 */
@@ -91,10 +92,10 @@ background-color: #ffffff; /* white */
 }
 
 .hook-testing-title {
-  font-size: 1.875rem;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 1rem;
-  font-family: 'Aboreto', cursive;
+  font-family: 'inter';
   color: #3F2E22;
 }
 
@@ -205,10 +206,10 @@ background-color: #ffffff; /* white */
 }
 
 .equipment-title {
-  font-size: 1.875rem;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 1rem;
-  font-family: 'Aboreto', cursive;
+  font-family: 'Inter';
   color: #3F2E22;
 }
 
