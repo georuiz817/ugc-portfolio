@@ -80,7 +80,8 @@ background-color: #ffffff; /* white */
 }
 
 /* Hook Testing Section */
-.hook-testing {
+/* Hook Testing Section */
+.hook-testing-section {
   margin-bottom: 5rem;
 }
 
@@ -89,13 +90,14 @@ background-color: #ffffff; /* white */
   margin-bottom: 4rem;
 }
 
-.hook-testing-header h3 {
-  font-size: 1.5rem;
+.hook-testing-title {
+  font-size: 1.875rem;
   font-weight: 500;
-  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
+  font-family: 'Aboreto', cursive;
+  color: #3F2E22;
 }
 
-/* Hook Videos Grid */
 .hook-videos-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -105,25 +107,209 @@ background-color: #ffffff; /* white */
 @media (min-width: 1024px) {
   .hook-videos-grid {
     grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
   }
 }
 
-/* Hook Video Card */
+.hook-videos-inner-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hook-videos-inner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .hook-video-card {
-background-color: #ffffff; /* white */
+  background-color: #ffffff;
   border-radius: var(--radius);
   overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
 
 .hook-video-card:hover {
-  box-shadow: 0 10px 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
+.hook-video-wrapper {
+  position: relative;
+  padding-top: 177.77%; /* 9:16 aspect ratio - matches portfolio */
+  overflow: hidden;
+}
 
+.hook-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius);
+}
 
+/* Safari fixes for hook videos */
+@supports (-webkit-appearance: none) {
+  .hook-video {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
 
+.hook-description-card {
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  height: fit-content;
+  transition: box-shadow 0.3s ease;
+}
 
+.hook-description-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
 
+.hook-description-header {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
 
+.hook-description-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3F2E22;
+  margin: 0;
+}
+
+.hook-description-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.hook-description-text {
+  color: #6b7280;
+  line-height: 1.625;
+  margin-bottom: 1rem;
+}
+
+.hook-description-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Equipment Section */
+.equipment-section {
+  margin-bottom: 5rem;
+}
+
+.equipment-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.equipment-title {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: 'Aboreto', cursive;
+  color: #3F2E22;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .equipment-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.equipment-card {
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.equipment-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.equipment-card-header {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.equipment-icon-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.equipment-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.equipment-blue-500 {
+  color: #3b82f6;
+}
+
+.equipment-gray-600 {
+  color: #6b7280;
+}
+
+.equipment-cyan-500 {
+  color: #06b6d4;
+}
+
+.equipment-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #3F2E22;
+  margin: 0;
+}
+
+.equipment-description {
+  color: #6b7280;
+  line-height: 1.625;
+  margin-bottom: 1rem;
+}
+
+.equipment-capabilities {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.capability-badge {
+  background-color: #BB6B5E;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Responsive padding adjustments */
+@media (min-width: 640px) {
+  .services-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

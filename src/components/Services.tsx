@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Video, Plane, Waves, Smartphone } from "lucide-react";
 import '../styles/services.css'
-
+ 
 export function Services() {
   const videoTypes = [
     {
@@ -69,13 +69,13 @@ export function Services() {
     {
       id: 101,
       category: "Hook 1",
-      embedUrl: "https://player.vimeo.com/video/YOUR_VIDEO_ID_1?badge=0&autopause=0&player_id=0&app_id=58479",
+      embedUrl: "https://player.vimeo.com/video/1126210202?badge=0&autopause=0&player_id=0&app_id=58479",
       videoPlatform: "vimeo"
     },
     {
       id: 102,
       category: "Hook 2",
-      embedUrl: "https://player.vimeo.com/video/YOUR_VIDEO_ID_2?badge=0&autopause=0&player_id=0&app_id=58479",
+      embedUrl: "https://player.vimeo.com/video/1126210202?badge=0&autopause=0&player_id=0&app_id=58479",
       videoPlatform: "vimeo"
     }
   ];
@@ -133,67 +133,66 @@ export function Services() {
           ))}
         </div>
 
-        {/* Hook Testing */}
-        <div className="hook-testing">
-          <div className="hook-testing-header">
-            <h3>Hook Testing</h3>
-          </div>
+      {/* Hook Testing */}
+<div className="hook-testing-section">
+  <div className="hook-testing-header">
+    <h3 className="hook-testing-title">Hook Testing</h3>
+  </div>
 
-          <div className="hook-videos-grid">
-            <div>
-              <div className="video-types-grid">
-                {abTestingVideos.map((item) => (
-                  <Card key={item.id} className="hook-video-card">
-                    <div className="hook-video-wrapper">
-                      {renderInlineVideo(item)}
-                    </div>
-                  </Card>
-                ))}
-              </div>
+  <div className="hook-videos-grid">
+    <div className="hook-videos-container">
+      <div className="hook-videos-inner-grid">
+        {abTestingVideos.map((item) => (
+          <Card key={item.id} className="hook-video-card">
+            <div className="hook-video-wrapper">
+              {renderInlineVideo(item)}
             </div>
+          </Card>
+        ))}
+      </div>
+    </div>
 
-            <div>
-              <Card className="hook-description-card">
-                <CardHeader>
-                  <CardTitle>Why Testing Matters</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>Every audience is different. What works for one audience might not work for another. That's why we create multiple versions of your content and test them against each other.</p>
-                  <p>Our approach helps identify which messaging, visuals, and calls-to-action drive the best engagement for your specific audience.</p>
-                </CardContent>
-              </Card>
-            </div>
+    <div className="hook-description-container">
+      <Card className="hook-description-card">
+        <CardHeader className="hook-description-header">
+          <CardTitle className="hook-description-title">Why Testing Matters</CardTitle>
+        </CardHeader>
+        <CardContent className="hook-description-content">
+          <p className="hook-description-text">Every audience is different. What works for one audience might not work for another. That's why we create multiple versions of your content and test them against each other.</p>
+          <p className="hook-description-text">Our approach helps identify which messaging, visuals, and calls-to-action drive the best engagement for your specific audience.</p>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</div>
+
+{/* Equipment Section */}
+<div className="equipment-section">
+  <div className="equipment-header">
+    <h3 className="equipment-title">Our Equipment</h3>
+  </div>
+
+  <div className="equipment-grid">
+    {equipment.map((item, index) => (
+      <Card key={index} className="equipment-card">
+        <CardHeader className="equipment-card-header">
+          <div className="equipment-icon-title">
+            <item.icon className={`equipment-icon ${item.color.replace('text-', 'equipment-')}`} />
+            <CardTitle className="equipment-card-title">{item.title}</CardTitle>
           </div>
-        </div>
-
-        {/* Equipment Section */}
-        <div className="equipment-section">
-          <div className="equipment-header">
-            <h3>Our Equipment</h3>
-          </div>
-
-          <div className="equipment-grid">
-            {equipment.map((item, index) => (
-              <Card key={index} className="equipment-card">
-                <CardHeader className="equipment-card-header">
-                  <div className="icon-title">
-                    <item.icon className={item.color} />
-                    <CardTitle>{item.title}</CardTitle>
-                  </div>
-                  <p>{item.description}</p>
-                </CardHeader>
-                <CardContent className="equipment-capabilities">
-                  {item.capabilities.map((capability) => (
-                    <Badge key={capability} className="badge">
-                      {capability}
-                    </Badge>
-                  ))}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
+          <p className="equipment-description">{item.description}</p>
+        </CardHeader>
+        <CardContent className="equipment-capabilities">
+          {item.capabilities.map((capability) => (
+            <Badge key={capability} className="capability-badge">
+              {capability}
+            </Badge>
+          ))}
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+</div>
       </div>
     </section>
   );
