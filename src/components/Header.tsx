@@ -1,13 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
+import '../styles/header.css'
 
 export function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "Work", href: "#portfolio" },
@@ -16,20 +14,20 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-medium font-aboreto">RR UGC</h1>
+    <header className="header">
+      <div className="header-container">
+        <div className="header-inner">
+          <div className="logo">
+            <h1>RR UGC</h1>
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="nav-desktop">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-lg text-foreground hover:text-primary transition-colors"
+                className="nav-link"
               >
                 {item.label}
               </a>
@@ -37,20 +35,19 @@ export function Header() {
           </nav>
 
           {/* Mobile Navigation */}
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="sm">
-                <Menu className="h-5 w-5" />
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="sm" className="hamburger-btn">
+                <Menu className="hamburger-icon" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[280px]">
-              <div className="flex flex-col space-y-6 mt-8">
+            <SheetContent side="right" className="sheet-content">
+              <div className="nav-mobile">
                 {navItems.map((item) => (
                   <a
                     key={item.label}
                     href={item.href}
-                    className="text-lg font-medium hover:text-primary transition-colors"
-                    onClick={() => setIsOpen(false)}
+                    className="mobile-nav-link"
                   >
                     {item.label}
                   </a>
