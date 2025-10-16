@@ -1,65 +1,66 @@
 import { Instagram, Youtube, Video, MapPin, Mail } from "lucide-react";
+import "../styles/footer.css";
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="space-y-4">
-            <h3 className="text-xl font-medium">Remote Roams</h3>
-            <p className="text-primary-foreground/80 text-sm">
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-grid">
+          <div className="footer-company">
+            <h3 className="footer-company-name">Remote Roams</h3>
+            <p className="footer-company-description">
               Blending diverse perspectives to showcase the soul of travel and hospitality
             </p>
-            <div className="space-y-2">
+            <div className="footer-contact">
               <a 
                 href="mailto:kashandgeorge@gmail.com" 
-                className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                className="footer-link"
               >
-                <Mail className="h-4 w-4" />
+                <Mail className="footer-icon" />
                 Email
               </a>
-              <div className="flex items-center gap-2 text-sm text-primary-foreground/80">
-                <MapPin className="h-4 w-4" />
+              <div className="footer-location">
+                <MapPin className="footer-icon" />
                 Based Worldwide
               </div>
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-medium">Follow Us</h4>
-            <div className="space-y-2">
+          <div className="footer-social">
+            <h4 className="footer-social-title">Follow Us</h4>
+            <div className="footer-social-links">
               <a 
                 href="https://www.instagram.com/remoteroams" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                className="footer-link"
               >
-                <Instagram className="h-4 w-4" />
+                <Instagram className="footer-icon" />
                 Instagram
               </a>
               <a 
                 href="https://www.tiktok.com/@remoteroams" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                className="footer-link"
               >
-                <Video className="h-4 w-4" />
+                <Video className="footer-icon" />
                 Tiktok
               </a>
               <a 
                 href="https://www.youtube.com/@remoteroams" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                className="footer-link"
               >
-                <Youtube className="h-4 w-4" />
+                <Youtube className="footer-icon" />
                 Youtube
               </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
+        <div className="footer-bottom">
           <p>&copy; 2025 Remote Roams </p>
         </div>
       </div>
