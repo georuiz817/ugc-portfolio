@@ -1,0 +1,127 @@
+/* AB Testing Section */
+.abtesting-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@media (min-width: 640px) {
+  .abtesting-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .abtesting-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.abtesting-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abtesting-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.abtesting-header h2 {
+  font-family: 'Aboreto', serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .abtesting-header h2 {
+    font-size: 2.25rem;
+  }
+}
+
+/* AB Testing Grid */
+.abtesting-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .abtesting-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .abtesting-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* AB Testing Card */
+.abtesting-card {
+  background-color: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.abtesting-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Video/Embed Container */
+/* AB Testing Video Wrapper - MUST match Portfolio aspect ratio */
+.abtesting-video-wrapper {
+  position: relative;
+  padding-top: 177.77%; /* 9/16 aspect ratio - same as portfolio */
+  overflow: hidden;
+}
+
+.abtesting-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Safari fixes */
+@supports (-webkit-appearance: none) {
+  .abtesting-video {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+/* Description section */
+.abtesting-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.abtesting-description h3 {
+  font-family: 'Aboreto', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.abtesting-description p {
+  color: var(--foreground);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}

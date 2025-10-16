@@ -1,5 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Star } from "lucide-react";
+import "../styles/reviews.css";
+
 
 export function Reviews() {
   const reviews = [
@@ -30,44 +32,46 @@ export function Reviews() {
   ];
 
   return (
-    <section id="reviews" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-medium mb-4 font-aboreto">
+    <section id="reviews" className="reviews-section">
+      <div className="reviews-container">
+        <div className="reviews-header">
+          <h2 className="reviews-title">
             Reviews
           </h2>
-
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="reviews-grid">
           {reviews.slice(0, 3).map((review, index) => (
-            <Card key={index} className="h-full hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-1 mb-4">
+            <Card key={index} className="review-card">
+              <CardContent className="review-card-content">
+                <div className="stars-container">
                   {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />
+                    <Star key={i} className="star-icon" />
                   ))}
                 </div>
                 
-                <blockquote className="text-primary mb-6 italic">
+                <blockquote className="review-text">
                   "{review.text}"
                 </blockquote>
                 
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full overflow-hidden bg-secondary flex items-center justify-center">
+                <div className="review-author">
+                  <div className="avatar-container">
                     <img 
                       src={review.avatar} 
                       alt={`${review.company} logo`}
-                      className="w-full h-full object-cover"
+                      className="avatar-image"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';
-                        e.currentTarget.parentElement.innerHTML = `<div class="w-full h-full bg-secondary text-secondary-foreground flex items-center justify-center font-medium text-xs">${review.company.substring(0, 2).toUpperCase()}</div>`;
+                        const parent = e.currentTarget.parentElement;
+                        if (parent) {
+                          parent.innerHTML = `<div class="avatar-fallback">${review.company.substring(0, 2).toUpperCase()}</div>`;
+                        }
                       }}
                     />
                   </div>
-                  <div>
-                    <div className="font-medium text-foreground">{review.name}</div>
-                    <div className="text-sm text-muted-foreground">
+                  <div className="author-info">
+                    <div className="author-name">{review.name}</div>
+                    <div className="author-details">
                       {review.role}, {review.company}
                     </div>
                   </div>
