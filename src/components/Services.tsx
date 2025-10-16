@@ -69,13 +69,13 @@ export function Services() {
     {
       id: 101,
       category: "Hook 1",
-      embedUrl: "https://player.vimeo.com/video/1126210202?badge=0&autopause=0&player_id=0&app_id=58479",
+      embedUrl: "https://player.vimeo.com/video/1122144735?badge=0&autopause=0&player_id=0&app_id=58479",
       videoPlatform: "vimeo"
     },
     {
       id: 102,
       category: "Hook 2",
-      embedUrl: "https://player.vimeo.com/video/1126210202?badge=0&autopause=0&player_id=0&app_id=58479",
+      embedUrl: "https://player.vimeo.com/video/1122144672?badge=0&autopause=0&player_id=0&app_id=58479",
       videoPlatform: "vimeo"
     }
   ];
