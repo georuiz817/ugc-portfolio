@@ -1,0 +1,104 @@
+/* Header container */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 50;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo h1 {
+  font-family: 'Aboreto', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Desktop navigation */
+.nav-desktop {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #3F2E22;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #BB6B5E;
+}
+
+/* Mobile hamburger button */
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.hamburger-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: #3F2E22;
+}
+
+/* Mobile navigation inside Sheet */
+.sheet-content {
+  width: 280px;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.nav-mobile .nav-link {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .hamburger-btn {
+    display: none;
+  }
+}
+
+/* Safari compatibility */
+@supports not (color: oklch(0 0 0)) {
+  .header {
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-link {
+    color: #3F2E22;
+  }
+  .hamburger-btn svg {
+    stroke: #3F2E22;
+  }
+}
