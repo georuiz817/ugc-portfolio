@@ -63,18 +63,24 @@
 /* Mobile navigation inside Sheet */
 .sheet-content {
   width: 280px;
+  text-align: center;
 }
 
 .nav-mobile {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+
 }
 
 .nav-mobile .nav-link {
   font-size: 1.125rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;  
+}
+
+a.mobile-nav-link{
+  margin-bottom: 20px;
 }
 
 /* Responsive */
