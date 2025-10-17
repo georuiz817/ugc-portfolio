@@ -2,7 +2,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Video, Plane, Waves, Smartphone } from "lucide-react";
+import {   Waves, Smartphone, Drone } from "lucide-react";
+
 import '../styles/services.css'
  
 export function Services() {
@@ -43,7 +44,7 @@ export function Services() {
 
   const equipment = [
     {
-      icon: Plane,
+      icon: Drone,
       title: "DJI Mini 4 Pro Drone",
       description: "Stunning aerial perspectives and smooth cinematic drone footage for breathtaking overviews.",
       capabilities: ["Aerial shots", "Cinematic movements", "4K video", "Follow shots"],
