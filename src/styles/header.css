@@ -80,7 +80,15 @@
 }
 
 a.mobile-nav-link{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+a.mobile-nav-link:hover{
+  color: #BB6B5E;
+}
+
+a.nav-mobile-nav-link:active{
+  color: #BB6B5E;
 }
 
 /* Responsive */
