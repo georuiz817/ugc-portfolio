@@ -11,11 +11,114 @@ export function Portfolio() {
   const categories = ["All", "Hotel", "Tourism", "Cafes & Coworking", "Physical Product"];
 
   const portfolioItems = [
-    { id: 1, category: "Hotel", embedUrl: "https://player.vimeo.com/video/1126210202?badge=0&autopause=0&player_id=0&app_id=58479", videoPlatform: "vimeo" },
-    { id: 2, category: "Tourism", embedUrl: "https://player.vimeo.com/video/1126209938?badge=0&autopause=0&player_id=0&app_id=58479", videoPlatform: "vimeo" },
-    { id: 3, category: "Hotel", embedUrl: "https://player.vimeo.com/video/1126209854?badge=0&autopause=0&player_id=0&app_id=58479", videoPlatform: "vimeo" },
-    { id: 4, category: "Physical Product", embedUrl: "https://player.vimeo.com/video/1122144587?badge=0&autopause=0&player_id=0&app_id=58479", videoPlatform: "vimeo" },
-    { id: 5, category: "Cafes & Coworking", embedUrl: "https://player.vimeo.com/video/1122145147?badge=0&autopause=0&player_id=0&app_id=58479", videoPlatform: "vimeo" },
+    {
+  id: 1,
+  category: "Hotel",
+  embedUrl: "https://player.vimeo.com/video/1126209854?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 2,
+  category: "Hotel",
+  embedUrl: "https://player.vimeo.com/video/1126209345?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 3,
+  category: "Cafes & Coworking",
+  embedUrl: "https://player.vimeo.com/video/1126196439?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 4,
+  category: "Hotel",
+  embedUrl: "https://player.vimeo.com/video/1126210202?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 5,
+  category: "Hotel",
+  embedUrl: "https://player.vimeo.com/video/1122125901?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 6,
+  category: "Cafes & Coworking",
+  embedUrl: "https://player.vimeo.com/video/1126196501?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 7,
+  category: "Tourism",
+  embedUrl: "https://player.vimeo.com/video/1122145189?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 8,
+  category: "Cafes & Coworking",
+  embedUrl: "https://player.vimeo.com/video/1126195868?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 9,
+  category: "Hotel",
+  embedUrl: "https://player.vimeo.com/video/1126210054?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 10,
+  category: "Tourism",
+  embedUrl: "https://player.vimeo.com/video/1126209938?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 11,
+  category: "Physical Product",
+  embedUrl: "https://player.vimeo.com/video/1122144965?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 12,
+  category: "Hotel",
+  embedUrl: "https://player.vimeo.com/video/1122145082?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 13,
+  category: "Cafes & Coworking",
+  embedUrl: "https://player.vimeo.com/video/1122144520?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 14,
+  category: "Hotel",
+  embedUrl: "https://player.vimeo.com/video/1126195942?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 15,
+  category: "Cafes & Coworking",
+  embedUrl: "https://player.vimeo.com/video/1122145147?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 16,
+  category: "Physical Product",
+  embedUrl: "https://player.vimeo.com/video/1122144938?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 17,
+  category: "Tourism",
+  embedUrl: "https://player.vimeo.com/video/1126226191?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
+{
+  id: 18,
+  category: "Physical Product",
+  embedUrl: "https://player.vimeo.com/video/1122144587?badge=0&autopause=0&player_id=0&app_id=58479",
+  videoPlatform: "vimeo",
+},
   ];
 
   const filteredItems = activeCategory === "All"
