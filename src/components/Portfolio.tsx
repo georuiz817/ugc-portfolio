@@ -32,6 +32,7 @@ export function Portfolio() {
           className="portfolio-video"
           allow="autoplay; fullscreen; picture-in-picture"
           allowFullScreen
+          
         />
       );
     } else {
