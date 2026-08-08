@@ -1,0 +1,126 @@
+/** CAFES & COWORKING SECTION */
+
+/* Section styles */
+.cafes-section {
+  padding: 5rem 1rem;
+  background-color: #FCF9F8;
+  color: #3F2E22;
+}
+
+/* Responsive paddings (same as hospitality) */
+@media (min-width: 640px) {
+  .cafes-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .cafes-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 639px) {
+  .cafes-section {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.cafes-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Row: Always 3 cards on desktop, 2 on tablet, 1 on mobile */
+.cafes-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 640px) {
+  .cafes-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .cafes-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card styles */
+.cafes-card {
+  background-color: #BB6B5E;
+  border: 1px solid #E4C4BF;
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.cafes-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Embeds */
+.cafes-embed-wrapper {
+  padding: 0 1.5rem 1rem;
+}
+
+.cafes-embed {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: none;
+  border-radius: calc(var(--radius) - 2px);
+  background-color: var(--card);
+}
+
+/* Card header styles */
+.cafes-card-heading {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+/* Mini header: matches hospitality-mini-header */
+.cafes-mini-header {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--secondary-foreground, #fff);
+  opacity: 0.85;
+  margin-bottom: 0;
+  line-height: normal;
+}
+
+/* Large header: matches hospitality-large-header */
+.cafes-large-header {
+  font-family: 'Aboreto', cursive;
+  font-size: 24px;
+  color: var(--secondary-foreground, #fff);
+  font-weight: 300;
+  margin-top: 0.2em;
+  line-height: 1.14;
+}
+
+/* Section main header -- CAFES & COWORKING title */
+.portfolio-header h2 {
+  font-family: 'Aboreto', serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  color: #3F2E22;
+}
+@media (min-width: 640px) {
+  .portfolio-header h2 {
+    font-size: 2.25rem;
+  }
+}

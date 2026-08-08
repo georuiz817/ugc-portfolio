@@ -1,10 +1,10 @@
 import "../styles/HospitalityTourism.css";
-import "../index.css";
+ 
 
 export function HospitalityTourism() {
   return (
     <section className="hospitality-section">
-      <div className="portfolio-header">
+      <div className="portfolio-header hos-color">
         <h2>Hospitality &amp; Tourism</h2>
       </div>
       <div className="hospitality-container">

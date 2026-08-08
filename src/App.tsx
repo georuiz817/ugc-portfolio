@@ -2,6 +2,8 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { TrustBy } from "./components/TrustBy";
 import { HospitalityTourism } from "./components/HospitalityAndTourism";
+import { CafesAndCoworking } from "./components/cafesAndCoworking";
+import { PhysicalComps } from "./components/physicalComps";
 import { About } from "./components/About";
 import { Portfolio } from "./components/Portfolio";
 import { Services } from "./components/Services";
@@ -17,6 +19,8 @@ export default function App() {
         <Hero />
         <TrustBy />
         <HospitalityTourism/>
+        <CafesAndCoworking/>
+        <PhysicalComps/>
         <Portfolio />
         <Services />
         <Reviews />
