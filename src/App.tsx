@@ -14,10 +14,10 @@ export default function App() {
       <main>
         <Hero />
         <TrustBy />
-        <About />
         <Portfolio />
         <Services />
         <Reviews />
+        <About />
       </main>
       <Footer />
       <Toaster />

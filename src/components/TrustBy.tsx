@@ -1,4 +1,4 @@
-import "../styles/portfolio.css";
+import "../styles/Trustby.css";
 import "../index.css";
 import avilaBeachHotelLogo from "../assets/UGCLOGOS/avila-beach-hotel-logo.png";
 import wynwoodLogo from "../assets/UGCLOGOS/Wynwood.png";
