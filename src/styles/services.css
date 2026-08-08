@@ -20,7 +20,7 @@
   font-weight: 500;
   font-size: 2.25rem; /* ~text-3xl */
   line-height: 2.5rem;
-  margin: 32px 0 0 0; /* At least 32px top margin for more space from equipment section */
+  margin: 64px 0 0 0; /* Increased top margin for more space from equipment section */
 }
 
 /* Video Types Grid */
@@ -218,6 +218,7 @@
   color: #FCF9F8;
 }
 
+/* Equipment grid gets same mobile padding as services */
 .equipment-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -225,6 +226,15 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .equipment-grid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -236,9 +246,12 @@
 @media (min-width: 1024px) {
   .equipment-grid {
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
+/* Cards no longer reach screen edges on mobile */
 .equipment-card {
   background-color: #ffffff;
   border-radius: var(--radius);
@@ -246,6 +259,7 @@
   transition: box-shadow 0.3s ease;
   /* Remove border or box for flush look */
   box-shadow: none;
+  /* margin for spacing between cards and edges removed, grid padding handles it */
 }
 
 .equipment-card:hover {
@@ -290,7 +304,7 @@
 .equipment-description {
   color: #6b7280;
   line-height: 1.625;
- }
+}
 
 .equipment-capabilities {
   padding: 0 1.5rem 1.5rem 1.5rem;
@@ -309,7 +323,7 @@
   display: inline-block;
 }
 
-/* Responsive padding adjustments */
+/* Responsive padding adjustments for services section */
 @media (min-width: 640px) {
   .services-section {
     padding-left: 1.5rem;
@@ -341,11 +355,11 @@
 }
 
 .capability-badge {
-   color: #3F2E22;
+  color: #3F2E22;
   padding: 0.25rem 0.75rem;
-   font-size: 0.75rem;
+  font-size: 0.75rem;
   font-weight: 500;
   border-radius: 8px;
-border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.10);
   display: inline-block;
 }
