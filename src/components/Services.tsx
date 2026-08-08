@@ -9,9 +9,11 @@ import '../styles/services.css'
 export function Services() {
   const videoTypes = [
     {
-      title: "Montages",
-      description: "Visual storytelling that captures the essence of your brand in seconds."
+      title:"Drone & Underwater",
+      description:"Immersive perspectives to add a unique touch "
+
     },
+
     {
       title: "Cinematic Videos", 
       description: "High-quality, content with smooth camera movements and cinematic flair."
