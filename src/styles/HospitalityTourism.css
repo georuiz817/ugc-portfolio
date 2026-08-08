@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto:wght@400&display=swap");
+
+/* Hospitality & Tourism Section */
+.hospitality-section {
+  padding: 5rem 1rem;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+@media (min-width: 640px) {
+  .hospitality-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hospitality-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.hospitality-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hospitality-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Card styles */
+.hospitality-card {
+  background-color: var(--secondary);
+  border: 1px solid #E4C4BF;
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.hospitality-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hospitality-stats {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 1.5rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+.hospitality-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hospitality-stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary-foreground);
+  opacity: 0.85;
+}
+
+.hospitality-stat-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--secondary-foreground);
+}
+
+.hospitality-embed-wrapper {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.hospitality-embed {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: none;
+  border-radius: calc(var(--radius) - 2px);
+  background-color: var(--card);
+}
+
+/* Header & mini-header styles for all card headers */
+.hospitality-card-heading {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0; /* No large gap between mini and large header */
+}
+
+/* Mini header: Inter, 12px, 5px letter spacing, uppercase */
+.hospitality-mini-header {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--secondary-foreground);
+  font-weight: 500;
+  margin-bottom: 0; /* No large gap; normal line height keeps spacing tight */
+  line-height: 1.1;
+}
+
+/* Large header: Aboreto, 24px */
+.hospitality-large-header {
+  font-family: 'Aboreto', cursive;
+  font-size: 24px;
+  color: var(--secondary-foreground);
+  font-weight: 400;
+  margin-top: 0.2em; /* small gap, normal spacing */
+  line-height: 1.14;
+}

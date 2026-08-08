@@ -1,12 +1,14 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { TrustBy } from "./components/TrustBy";
+import { HospitalityTourism } from "./components/HospitalityAndTourism";
 import { About } from "./components/About";
 import { Portfolio } from "./components/Portfolio";
 import { Services } from "./components/Services";
 import { Reviews } from "./components/Reviews";
 import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
+
 export default function App() {
   return (
     <div className="min-h-screen">
@@ -14,6 +16,7 @@ export default function App() {
       <main>
         <Hero />
         <TrustBy />
+        <HospitalityTourism/>
         <Portfolio />
         <Services />
         <Reviews />
