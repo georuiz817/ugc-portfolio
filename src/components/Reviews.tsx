@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Star, ArrowLeft, ArrowRight } from "lucide-react";
 import "../styles/reviews.css";
-
-const reviews = [
+ const reviews = [
   // Most recent reviews first
   {
     name: "Gaelle",

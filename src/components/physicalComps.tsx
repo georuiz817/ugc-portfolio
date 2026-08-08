@@ -3,7 +3,7 @@ import "../styles/HospitalityTourism.css";
 export function PhysicalComps() {
   return (
     <section className="hospitality-section">
-      <div className="portfolio-header  hos-color">
+      <div className="services-header  hos-color">
         <h2>Physical Products</h2>
       </div>
       <div className="hospitality-container">

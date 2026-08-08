@@ -3,7 +3,7 @@ import "../styles/cafesAndCoWorking.css";
 export function CafesAndCoworking() {
   return (
     <section className="cafes-section">
-      <div className="portfolio-header">
+      <div className="services-header">
         <h2>CAFES &amp; COWORKING</h2>
       </div>
       <div className="cafes-container">
