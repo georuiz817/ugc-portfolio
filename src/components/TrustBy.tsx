@@ -1,89 +1,80 @@
-import React from "react";
+import "../styles/portfolio.css";
+import "../index.css";
+import avilaBeachHotelLogo from "../assets/UGCLOGOS/avila-beach-hotel-logo.png";
+import wynwoodLogo from "../assets/UGCLOGOS/Wynwood.png";
+import begasoLogo from "../assets/UGCLOGOS/Begaso.png";
+import endlessSummerLogo from "../assets/UGCLOGOS/Endless Summer.png";
+import jilooLogo from "../assets/UGCLOGOS/Jiloo.png";
+import folkCafeLogo from "../assets/UGCLOGOS/Folk Cafe.png";
+import inlightLogo from "../assets/UGCLOGOS/inlight-logo-300x_orig.png";
+import casaArekaLogo from "../assets/UGCLOGOS/CasaAreka.png";
 
 export function TrustBy() {
-  // Placeholder image URLs – replace with your own images later
-  const firstRowImages = [
-    "/placeholder1.png",
-    "/placeholder2.png",
-    "/placeholder3.png",
-  ];
-
-  const secondRowImages = [
-    "/placeholder4.png",
-    "/placeholder5.png",
-    "/placeholder6.png",
-    "/placeholder7.png",
-    "/placeholder8.png",
-  ];
-
   return (
-    <section className="trustby-section" style={{ padding: "3rem 0" }}>
-      <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-        <h2
-          style={{
-            fontWeight: 700,
-            fontSize: "2rem",
-            letterSpacing: "0.01em",
-          }}
-        >
-          Trusted By...
-        </h2>
+    <section className="trustby-section">
+      <div className="portfolio-header">
+        <h2>Trusted By...</h2>
       </div>
-      <div style={{ width: "100%", maxWidth: "1200px", margin: "0 auto" }}>
-        {/* First row */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            gap: "2rem",
-            marginBottom: "2rem",
-            width: "100%",
-          }}
-        >
-          {firstRowImages.map((src, idx) => (
-            <div
-              key={idx}
-              style={{
-                flex: 1,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <img
-                src={src}
-                alt={`Trusted brand ${idx + 1}`}
-                style={{ maxHeight: "70px", maxWidth: "100%", objectFit: "contain", width: "100%" }}
-              />
-            </div>
-          ))}
+      <div className="trustby-container">
+        <div className="trustby-row trustby-row-large">
+          <div className="trustby-logo-col">
+            <img
+              src={avilaBeachHotelLogo}
+              alt="Avila Beach Hotel"
+              className="trustby-logo trustby-logo-large"
+            />
+          </div>
+          <div className="trustby-logo-col">
+            <img
+              src={wynwoodLogo}
+              alt="Wynwood"
+              className="trustby-logo trustby-logo-large"
+            />
+          </div>
+          <div className="trustby-logo-col">
+            <img
+              src={begasoLogo}
+              alt="Begaso"
+              className="trustby-logo trustby-logo-large"
+            />
+          </div>
         </div>
-        {/* Second row */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            gap: "1.5rem",
-            width: "100%",
-          }}
-        >
-          {secondRowImages.map((src, idx) => (
-            <div
-              key={idx}
-              style={{
-                flex: 1,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <img
-                src={src}
-                alt={`Trusted brand ${idx + 4}`}
-                style={{ maxHeight: "60px", maxWidth: "100%", objectFit: "contain", width: "100%" }}
-              />
-            </div>
-          ))}
+        <div className="trustby-row trustby-row-small">
+          <div className="trustby-logo-col">
+            <img
+              src={endlessSummerLogo}
+              alt="Endless Summer"
+              className="trustby-logo trustby-logo-small"
+            />
+          </div>
+          <div className="trustby-logo-col">
+            <img
+              src={jilooLogo}
+              alt="Jiloo"
+              className="trustby-logo trustby-logo-small"
+            />
+          </div>
+          <div className="trustby-logo-col">
+            <img
+              src={folkCafeLogo}
+              alt="Folk Cafe"
+              className="trustby-logo trustby-logo-small"
+            />
+          </div>
+          <div className="trustby-logo-col">
+            <img
+              src={inlightLogo}
+              alt="Inlight"
+              className="trustby-logo trustby-logo-small"
+            />
+          </div>
+          <div className="trustby-logo-col">
+            <img
+              src={casaArekaLogo}
+              alt="Casa Areka"
+              className="trustby-logo trustby-logo-small"
+            />
+          </div>
         </div>
       </div>
     </section>
