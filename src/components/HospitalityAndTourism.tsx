@@ -223,7 +223,7 @@ export function HospitalityTourism() {
                 TOURISM BOARD
               </div>
               <div className="hospitality-large-header">
-                cinematic montage
+                voice over
               </div>
             </div>
             <div className="hospitality-embed-wrapper">
