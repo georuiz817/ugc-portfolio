@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
-import {   Waves, Smartphone, Drone } from "lucide-react";
+import {   Waves, Smartphone, Drone, Camera } from "lucide-react";
 
 import '../styles/services.css'
  
@@ -63,7 +63,14 @@ export function Services() {
       description: "Adventure-ready action camera for unique perspectives and underwater filming.",
       capabilities: ["Underwater footage", "Action shots", "Wide angles", "Stabilization"],
       color: "text-cyan-500"
-    }
+    },
+    {
+      icon: Camera,
+      title: "DJI Osmo Pocket 3",
+      description: "Ultra stabilized mini gimbal camera for the smoothest footage",
+      capabilities: ["Cinematic footage", "Timelapse", "Stabilization"],
+      color: "text-cyan-500"
+    },
   ];
 
   const abTestingVideos = [

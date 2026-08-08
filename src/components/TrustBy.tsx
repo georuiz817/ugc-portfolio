@@ -12,7 +12,7 @@ import casaArekaLogo from "../assets/UGCLOGOS/CasaAreka.png";
 export function TrustBy() {
   return (
     <section className="trustby-section">
-      <div className="portfolio-header">
+      <div className="services-header">
         <h2>Trusted By...</h2>
       </div>
       <div className="trustby-container">
