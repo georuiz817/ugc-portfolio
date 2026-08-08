@@ -23,7 +23,7 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_1/embed"
+                src="https://www.instagram.com/reel/DY2erorxw-T/embed"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
@@ -45,7 +45,7 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_2/embed"
+                src="https://www.instagram.com/reel/DYuXtCdu6V7/embed"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
@@ -67,7 +67,7 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_3/embed"
+                src="https://www.instagram.com/reel/DYC6W6RRH3f/embed"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
@@ -88,11 +88,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_4/embed"
+                src="https://player.vimeo.com/video/1216516812"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 4"
+                title="Vimeo post 4"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -108,11 +111,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_5/embed"
+                src="https://player.vimeo.com/video/1216518331"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 5"
+                title="Vimeo post 5"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -128,11 +134,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_6/embed"
+                src="https://player.vimeo.com/video/1216519320"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 6"
+                title="Vimeo post 6"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -149,11 +158,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_7/embed"
+                src="https://player.vimeo.com/video/1216520516"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 7"
+                title="Vimeo post 7"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -169,11 +181,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_8/embed"
+                src="https://player.vimeo.com/video/1126209938"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 8"
+                title="Vimeo post 8"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -189,11 +204,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_9/embed"
+                src="https://player.vimeo.com/video/1126210202"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 9"
+                title="Vimeo post 9"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -210,11 +228,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_10/embed"
+                src="https://player.vimeo.com/video/1126226191"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 10"
+                title="Vimeo post 10"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -230,11 +251,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_11/embed"
+                src="https://player.vimeo.com/video/1122125901"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 11"
+                title="Vimeo post 11"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
@@ -250,11 +274,14 @@ export function HospitalityTourism() {
             </div>
             <div className="hospitality-embed-wrapper">
               <iframe
-                src="https://www.instagram.com/p/REPLACE_ME_12/embed"
+                src="https://player.vimeo.com/video/1216526323"
                 className="hospitality-embed"
                 loading="lazy"
                 allowTransparency
-                title="Instagram post 12"
+                title="Vimeo post 12"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
               />
             </div>
           </div>
