@@ -8,29 +8,46 @@
   color: var(--secondary-foreground);
 }
 
+/* Mobile: One card per row with 32px horizontal padding */
+.hospitality-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Tablet: Two cards per row */
 @media (min-width: 640px) {
   .hospitality-section {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+  .hospitality-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+/* Desktop: Three cards per row */
 @media (min-width: 1024px) {
   .hospitality-section {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .hospitality-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile container spacing (32px left/right) */
+@media (max-width: 639px) {
+  .hospitality-section {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 .hospitality-container {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.hospitality-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
 }
 
 /* Card styles */
@@ -52,7 +69,7 @@
 .hospitality-stats {
   display: flex;
   gap: 32px;
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 1.25rem 1.5rem 0.75rem;
   font-family: 'Inter', sans-serif;
   font-size: 12px;
 }
@@ -81,7 +98,7 @@
 }
 
 .hospitality-embed-wrapper {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 1.5rem 1rem;
 }
 
 .hospitality-embed {
@@ -94,7 +111,7 @@
 
 /* Header & mini-header styles for all card headers */
 .hospitality-card-heading {
-  padding: 32px;
+  padding: 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
