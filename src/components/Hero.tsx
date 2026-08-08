@@ -15,6 +15,7 @@ export function Hero() {
                 A digital nomad couple blending diverse perspectives to showcase
                 the soul of travel and hospitality
               </p>
+              <p>Get in Touch: remoteroams@gmail.com</p>
             </div>
 
             <div className="hero-buttons">
