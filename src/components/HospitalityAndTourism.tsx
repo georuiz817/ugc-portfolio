@@ -38,11 +38,11 @@ export function HospitalityTourism() {
             <div className="hospitality-stats">
               <div className="hospitality-stat">
                 <span className="hospitality-stat-label">Views</span>
-                <span className="hospitality-stat-value">0</span>
+                <span className="hospitality-stat-value">17,811</span>
               </div>
               <div className="hospitality-stat">
                 <span className="hospitality-stat-label">Interactions</span>
-                <span className="hospitality-stat-value">0</span>
+                <span className="hospitality-stat-value">162</span>
               </div>
             </div>
             <div className="hospitality-embed-wrapper">
@@ -61,11 +61,11 @@ export function HospitalityTourism() {
             <div className="hospitality-stats">
               <div className="hospitality-stat">
                 <span className="hospitality-stat-label">Views</span>
-                <span className="hospitality-stat-value">0</span>
+                <span className="hospitality-stat-value">10,500</span>
               </div>
               <div className="hospitality-stat">
                 <span className="hospitality-stat-label">Interactions</span>
-                <span className="hospitality-stat-value">0</span>
+                <span className="hospitality-stat-value">125</span>
               </div>
             </div>
             <div className="hospitality-embed-wrapper">
