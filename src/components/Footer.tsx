@@ -12,13 +12,10 @@ export function Footer() {
               Blending diverse perspectives to showcase the soul of travel and hospitality
             </p>
             <div className="footer-contact">
-              <a 
-                href="mailto:kashandgeorge@gmail.com" 
-                className="footer-link"
-              >
+              <div className="footer-email-text" style={{ display: "flex", alignItems: "center", gap: "0.5em" }}>
                 <Mail className="footer-icon" />
-                Email
-              </a>
+                Email us at remoteroams@gmail.com
+              </div>
               <div className="footer-location">
                 <MapPin className="footer-icon" />
                 Based Worldwide
@@ -61,7 +58,7 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 Remote Roams </p>
+          <p>&copy; 2026 Remote Roams </p>
         </div>
       </div>
     </footer>
