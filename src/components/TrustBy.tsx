@@ -1,6 +1,5 @@
 import "../styles/trustBy.css";
-import "../index.css";
-import avilaBeachHotelLogo from "../assets/UGCLOGOS/avila-beach-hotel-logo.png";
+ import avilaBeachHotelLogo from "../assets/UGCLOGOS/avila-beach-hotel-logo.png";
 import wynwoodLogo from "../assets/UGCLOGOS/Wynwood.png";
 import begasoLogo from "../assets/UGCLOGOS/Begaso.png";
 import endlessSummerLogo from "../assets/UGCLOGOS/Endless Summer.png";

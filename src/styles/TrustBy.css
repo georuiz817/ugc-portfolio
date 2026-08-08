@@ -29,25 +29,22 @@
 
 .trustby-row-large .trustby-logo-col {
   flex: 0 0 30%;
-  height: 160px;
 }
 
 .trustby-row-small .trustby-logo-col {
   flex: 0 0 18%;
-  height: 110px;
 }
 
 .trustby-logo-col {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background: transparent;
 }
 
 .trustby-logo {
   max-width: 100%;
-  width: auto;
-  height: 100%;
+  width: 100%;
   object-fit: contain;
   filter: grayscale(0%);
   transition: filter 0.2s;
@@ -55,11 +52,11 @@
 }
 
 .trustby-logo-large {
-  /* No max-height; height is handled by logo-col parent */
+  max-height: 160px;
 }
 
 .trustby-logo-small {
-  /* No max-height; height is handled by logo-col parent */
+  max-height: 110px;
 }
 
 /* Tablet */
