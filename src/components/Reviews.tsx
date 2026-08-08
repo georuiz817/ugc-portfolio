@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import { Star, ArrowLeft, ArrowRight } from "lucide-react";
+import avilaBeachHotelLogo from "../assets/UGCLOGOS/avila-beach-hotel-logo.png";
+import casaArekaLogo from "../assets/UGCLOGOS/CasaAreka.png";
+import jilooLogo from "../assets/UGCLOGOS/Jiloo.png";
+
 import "../styles/reviews.css";
- const reviews = [
+const reviews = [
   // Most recent reviews first
   {
     name: "Gaelle",
@@ -10,7 +14,7 @@ import "../styles/reviews.css";
     role: "Owner",
     rating: 5,
     text: "Amazing work! They are really profesional and the quality of their work is flawless. Highly recommend!",
-    avatar: "n/a",
+    avatar: jilooLogo,
   },
   {
     name: "Victoria Hernandez",
@@ -18,7 +22,7 @@ import "../styles/reviews.css";
     role: "Owner",
     rating: 4,
     text: "It was a very professional experience. From the beginning, they were clear about their vision and also took the time to understand what we wanted to highlight about our space. They stayed attentive even after delivering the content, making the whole process smooth and collaborative",
-    avatar: "n/a",
+    avatar: casaArekaLogo,
   },
   {
     name: "Gabriella Hoop",
@@ -26,7 +30,7 @@ import "../styles/reviews.css";
     role: "PR & Online Marketeer",
     rating: 5,
     text: "We absolutely love the footage. The quality and overall feel capture the Avila experience beautifully. So happy to see you enjoyed your stay that much 🤍",
-    avatar: "n/a",
+    avatar: avilaBeachHotelLogo,
   },
   {
     name: "Niklas Schott",
@@ -152,6 +156,15 @@ export function Reviews() {
                         src={review.avatar}
                         alt={`${review.company} logo`}
                         className="avatar-image"
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          objectFit: "contain",
+                          borderRadius: "50%",
+                          background: "#fff",
+                          border: "1px solid #eee",
+                          display: "block"
+                        }}
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
                           const parent = e.currentTarget.parentElement;
