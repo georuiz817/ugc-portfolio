@@ -101,24 +101,25 @@
   gap: 0; /* No large gap between mini and large header */
 }
 
-/* Mini header: Inter, 12px, 5px letter spacing, uppercase */
+/* Mini header: same as hospitality-stat-label */
 .hospitality-mini-header {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
+  font-weight: 300;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--secondary-foreground);
-  font-weight: 500;
+  opacity: 0.85;
   margin-bottom: 0; /* No large gap; normal line height keeps spacing tight */
-  line-height: 1.1;
+  line-height: normal;
 }
 
-/* Large header: Aboreto, 24px */
+/* Large header: Aboreto, 24px, lighter weight */
 .hospitality-large-header {
   font-family: 'Aboreto', cursive;
   font-size: 24px;
   color: var(--secondary-foreground);
-  font-weight: 400;
+  font-weight: 300; /* lighter than 400 previously */
   margin-top: 0.2em; /* small gap, normal spacing */
   line-height: 1.14;
 }

@@ -9,8 +9,7 @@ export function HospitalityTourism() {
       </div>
       <div className="hospitality-container">
         <div className="hospitality-row">
-
-          {/* First card with stats */}
+          {/* First row: all stats cards */}
           <div className="hospitality-card">
             <div className="hospitality-stats">
               <div className="hospitality-stat">
@@ -33,7 +32,6 @@ export function HospitalityTourism() {
             </div>
           </div>
 
-          {/* Second card with stats */}
           <div className="hospitality-card">
             <div className="hospitality-stats">
               <div className="hospitality-stat">
@@ -56,7 +54,6 @@ export function HospitalityTourism() {
             </div>
           </div>
 
-          {/* Third card with stats */}
           <div className="hospitality-card">
             <div className="hospitality-stats">
               <div className="hospitality-stat">
@@ -79,29 +76,14 @@ export function HospitalityTourism() {
             </div>
           </div>
 
-          {/* Example for additional card – no stats, use mini header and large header */}
+          {/* Second row: all mini-header and header cards */}
           <div className="hospitality-card">
             <div className="hospitality-card-heading">
-              <div
-                className="hospitality-mini-header"
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: "12px",
-                  letterSpacing: "5px",
-                  textTransform: "uppercase"
-                }}
-              >
-                Mini Header
+              <div className="hospitality-mini-header">
+                BOUTIQUE HOTEL
               </div>
-              <div
-                className="hospitality-large-header"
-                style={{
-                  fontFamily: "'Aboreto', cursive",
-                  fontSize: "24px",
-                  marginTop: "0.35em"
-                }}
-              >
-                Large Header
+              <div className="hospitality-large-header">
+                cinematic montage
               </div>
             </div>
             <div className="hospitality-embed-wrapper">
@@ -115,29 +97,13 @@ export function HospitalityTourism() {
             </div>
           </div>
 
-          {/* Example for another additional card */}
           <div className="hospitality-card">
             <div className="hospitality-card-heading">
-              <div
-                className="hospitality-mini-header"
-                style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: "12px",
-                  letterSpacing: "5px",
-                  textTransform: "uppercase"
-                }}
-              >
-                Mini Header 2
+              <div className="hospitality-mini-header">
+                BOUTIQUE HOTEL
               </div>
-              <div
-                className="hospitality-large-header"
-                style={{
-                  fontFamily: "'Aboreto', cursive",
-                  fontSize: "24px",
-                  marginTop: "0.35em"
-                }}
-              >
-                Large Header 2
+              <div className="hospitality-large-header">
+                property highlight
               </div>
             </div>
             <div className="hospitality-embed-wrapper">
@@ -151,8 +117,147 @@ export function HospitalityTourism() {
             </div>
           </div>
 
-          {/* Add more cards as needed following the above structure */}
+          <div className="hospitality-card">
+            <div className="hospitality-card-heading">
+              <div className="hospitality-mini-header">
+                BOUTIQUE HOTEL
+              </div>
+              <div className="hospitality-large-header">
+                trending video
+              </div>
+            </div>
+            <div className="hospitality-embed-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/REPLACE_ME_6/embed"
+                className="hospitality-embed"
+                loading="lazy"
+                allowTransparency
+                title="Instagram post 6"
+              />
+            </div>
+          </div>
 
+          {/* Third row: all mini-header and header cards */}
+          <div className="hospitality-card">
+            <div className="hospitality-card-heading">
+              <div className="hospitality-mini-header">
+                AIRBNB
+              </div>
+              <div className="hospitality-large-header">
+                Property highlight
+              </div>
+            </div>
+            <div className="hospitality-embed-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/REPLACE_ME_7/embed"
+                className="hospitality-embed"
+                loading="lazy"
+                allowTransparency
+                title="Instagram post 7"
+              />
+            </div>
+          </div>
+
+          <div className="hospitality-card">
+            <div className="hospitality-card-heading">
+              <div className="hospitality-mini-header">
+                WINERY
+              </div>
+              <div className="hospitality-large-header">
+                On Site Activities
+              </div>
+            </div>
+            <div className="hospitality-embed-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/REPLACE_ME_8/embed"
+                className="hospitality-embed"
+                loading="lazy"
+                allowTransparency
+                title="Instagram post 8"
+              />
+            </div>
+          </div>
+
+          <div className="hospitality-card">
+            <div className="hospitality-card-heading">
+              <div className="hospitality-mini-header">
+                WINERY
+              </div>
+              <div className="hospitality-large-header">
+                cinematic montage
+              </div>
+            </div>
+            <div className="hospitality-embed-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/REPLACE_ME_9/embed"
+                className="hospitality-embed"
+                loading="lazy"
+                allowTransparency
+                title="Instagram post 9"
+              />
+            </div>
+          </div>
+
+          {/* Fourth row: all mini-header and header cards */}
+          <div className="hospitality-card">
+            <div className="hospitality-card-heading">
+              <div className="hospitality-mini-header">
+                TOURISM BOARD
+              </div>
+              <div className="hospitality-large-header">
+                cinematic montage
+              </div>
+            </div>
+            <div className="hospitality-embed-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/REPLACE_ME_10/embed"
+                className="hospitality-embed"
+                loading="lazy"
+                allowTransparency
+                title="Instagram post 10"
+              />
+            </div>
+          </div>
+
+          <div className="hospitality-card">
+            <div className="hospitality-card-heading">
+              <div className="hospitality-mini-header">
+                SURF HOTEL
+              </div>
+              <div className="hospitality-large-header">
+                drone footage
+              </div>
+            </div>
+            <div className="hospitality-embed-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/REPLACE_ME_11/embed"
+                className="hospitality-embed"
+                loading="lazy"
+                allowTransparency
+                title="Instagram post 11"
+              />
+            </div>
+          </div>
+
+          <div className="hospitality-card">
+            <div className="hospitality-card-heading">
+              <div className="hospitality-mini-header">
+                RESORT
+              </div>
+              <div className="hospitality-large-header">
+                listicle
+              </div>
+            </div>
+            <div className="hospitality-embed-wrapper">
+              <iframe
+                src="https://www.instagram.com/p/REPLACE_ME_12/embed"
+                className="hospitality-embed"
+                loading="lazy"
+                allowTransparency
+                title="Instagram post 12"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
