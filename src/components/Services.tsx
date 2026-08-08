@@ -2,18 +2,16 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
-import {   Waves, Smartphone, Drone, Camera } from "lucide-react";
+import { Waves, Smartphone, Drone, Camera } from "lucide-react";
 
 import '../styles/services.css'
  
 export function Services() {
   const videoTypes = [
     {
-      title:"Drone & Underwater",
-      description:"Immersive perspectives to add a unique touch "
-
+      title: "Drone & Underwater",
+      description: "Immersive perspectives to add a unique touch "
     },
-
     {
       title: "Cinematic Videos", 
       description: "High-quality, content with smooth camera movements and cinematic flair."
@@ -75,61 +73,46 @@ export function Services() {
     },
   ];
 
-  const abTestingVideos = [
-    {
-      id: 101,
-      category: "Hook 1",
-      embedUrl: "https://player.vimeo.com/video/1122144735?badge=0&autopause=0&player_id=0&app_id=58479",
-      videoPlatform: "vimeo"
-    },
-    {
-      id: 102,
-      category: "Hook 2",
-      embedUrl: "https://player.vimeo.com/video/1122144672?badge=0&autopause=0&player_id=0&app_id=58479",
-      videoPlatform: "vimeo"
-    }
-  ];
-
-  const renderInlineVideo = (item: any) => {
-    const { videoUrl, embedUrl, videoPlatform } = item;
-
-    switch (videoPlatform) {
-      case 'vimeo':
-        return (
-          <iframe
-            src={embedUrl}
-            className="hook-video"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          />
-        );
-      
-      case 'html5':
-      default:
-        return (
-          <video
-            src={videoUrl}
-            controls
-            autoPlay
-            muted
-            className="hook-video"
-          >
-            Your browser does not support the video tag.
-          </video>
-        );
-    }
-  };
-
   return (
-    <section  id="services"  className="services-section">
+    <section id="services" className="services-section">
       <div className="services-container">
+        
+        {/* Equipment Section FIRST */}
+        <div className="equipment-section">
+          <div className="equipment-header">
+            <h3 className="equipment-title">Our Equipment</h3>
+          </div>
+          <div className="equipment-grid">
+            {equipment.map((item, index) => (
+              <Card key={index} className="equipment-card">
+                <CardHeader className="equipment-card-header">
+                  <div className="equipment-icon-title">
+                    <item.icon className={`equipment-icon ${item.color.replace('text-', 'equipment-')}`} />
+                    <CardTitle className="equipment-card-title">{item.title}</CardTitle>
+                  </div>
+                  <p className="equipment-description">{item.description}</p>
+                </CardHeader>
+                <CardContent className="equipment-capabilities">
+                  <div className="capabilities-label">Capabilities:</div>
+                  <div className="capabilities-list">
+                    {item.capabilities.map((capability) => (
+                      <Badge key={capability} className="capability-badge">
+                        {capability}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
 
         {/* Section Header */}
         <div className="services-header">
           <h2>Services</h2>
         </div>
 
-        {/* Video Types */}
+        {/* Video Types (Services) SECOND */}
         <div className="video-types-grid">
           {videoTypes.map((video, index) => (
             <Card key={index} className="video-type-card">
@@ -142,70 +125,6 @@ export function Services() {
             </Card>
           ))}
         </div>
-
-      {/* Hook Testing */}
-<div className="hook-testing-section">
-  <div className="hook-testing-header">
-    <h3 className="hook-testing-title">Hook Testing</h3>
-  </div>
-
-  <div className="hook-videos-grid">
-    <div className="hook-videos-container">
-      <div className="hook-videos-inner-grid">
-        {abTestingVideos.map((item) => (
-          <Card key={item.id} className="hook-video-card">
-            <div className="hook-video-wrapper">
-              {renderInlineVideo(item)}
-            </div>
-          </Card>
-        ))}
-      </div>
-    </div>
-
-    <div className="hook-description-container">
-      <Card className="hook-description-card">
-        <CardHeader className="hook-description-header">
-          <CardTitle className="hook-description-title">Why Testing Matters</CardTitle>
-        </CardHeader>
-        <CardContent className="hook-description-content">
-          <p className="hook-description-text">Every audience is different. What works for one audience might not work for another. That's why we create multiple versions of your content and test them against each other.</p>
-          <p className="hook-description-text">Our approach helps identify which messaging, visuals, and calls-to-action drive the best engagement for your specific audience.</p>
-        </CardContent>
-      </Card>
-    </div>
-  </div>
-</div>
-
-{/* Equipment Section */}{/* Equipment Section */}
-<div className="equipment-section">
-  <div className="equipment-header">
-    <h3 className="equipment-title">Our Equipment</h3>
-  </div>
-
-  <div className="equipment-grid">
-    {equipment.map((item, index) => (
-      <Card key={index} className="equipment-card">
-        <CardHeader className="equipment-card-header">
-          <div className="equipment-icon-title">
-            <item.icon className={`equipment-icon ${item.color.replace('text-', 'equipment-')}`} />
-            <CardTitle className="equipment-card-title">{item.title}</CardTitle>
-          </div>
-          <p className="equipment-description">{item.description}</p>
-        </CardHeader>
-        <CardContent className="equipment-capabilities">
-          <div className="capabilities-label">Capabilities:</div>
-          <div className="capabilities-list">
-            {item.capabilities.map((capability) => (
-              <Badge key={capability} className="capability-badge">
-                {capability}
-              </Badge>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-    ))}
-  </div>
-</div>
       </div>
     </section>
   );
