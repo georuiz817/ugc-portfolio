@@ -5,7 +5,7 @@ import { HospitalityTourism } from "./components/HospitalityAndTourism";
 import { CafesAndCoworking } from "./components/cafesAndCoworking";
 import { PhysicalComps } from "./components/physicalComps";
 import { About } from "./components/About";
-import { Portfolio } from "./components/Portfolio";
+ 
 import { Services } from "./components/Services";
 import { Reviews } from "./components/Reviews";
 import { Footer } from "./components/Footer";
@@ -21,9 +21,9 @@ export default function App() {
         <HospitalityTourism/>
         <CafesAndCoworking/>
         <PhysicalComps/>
-        <Portfolio />
-        <Services />
         <Reviews />
+        <Services />
+     
         <About />
       </main>
       <Footer />
