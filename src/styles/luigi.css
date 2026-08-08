@@ -1,9 +1,10 @@
 /* Trusted By Section */
 .trustby-section {
     background-color: #FCF9F8;
-    padding: 48px 0;
+    padding: 5rem 0;
     width: 100%;
-  }
+    
+   }
   
   /* Tighter gap between "Trusted By..." header and logos, just for this section */
   .trustby-section .portfolio-header {

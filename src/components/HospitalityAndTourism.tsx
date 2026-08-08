@@ -3,7 +3,7 @@ import "../styles/HospitalityTourism.css";
 
 export function HospitalityTourism() {
   return (
-    <section className="hospitality-section">
+    <section id='portfolio' className="hospitality-section">
       <div className="services-header hos-color">
         <h2>Hospitality &amp; Tourism</h2>
       </div>

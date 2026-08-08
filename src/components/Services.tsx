@@ -74,7 +74,7 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="services-section">
+    <section className="services-section">
       <div className="services-container">
         
         {/* Equipment Section FIRST */}
@@ -108,7 +108,7 @@ export function Services() {
         </div>
 
         {/* Section Header */}
-        <div className="services-header">
+        <div  id="services" className="services-header">
           <h2>Services</h2>
         </div>
 
