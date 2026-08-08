@@ -8,7 +8,7 @@ const reviews = [
   {
     name: "Gaelle",
     company: "Jiloo Petite Maison",
-    role: "Business owner",
+    role: "Owner",
     rating: 5,
     text: "Amazing work! They are really profesional and the quality of their work is flawless. Highly recommend!",
     avatar: "n/a",
@@ -16,8 +16,8 @@ const reviews = [
   {
     name: "Victoria Hernandez",
     company: "Casa Areka",
-    role: "CASA AREKA Feedback",
-    rating: 5,
+    role: "Owner",
+    rating: 4,
     text: "It was a very professional experience. From the beginning, they were clear about their vision and also took the time to understand what we wanted to highlight about our space. They stayed attentive even after delivering the content, making the whole process smooth and collaborative",
     avatar: "n/a",
   },
@@ -55,7 +55,7 @@ const reviews = [
   }
 ];
 
-// Show 3 reviews per carousel "page"
+// 3 reviews per carousel page
 const REVIEWS_PER_PAGE = 3;
 
 export function Reviews() {
@@ -80,7 +80,7 @@ export function Reviews() {
           </h2>
         </div>
 
-        <div className="reviews-carousel-controls" style={{ textAlign: "center", marginBottom: "1rem" }}>
+        <div className="reviews-carousel-controls" style={{ textAlign: "center", marginBottom: "1rem", display: "flex", justifyContent: "center", alignItems: "center", gap: "0.5rem" }}>
           <button
             aria-label="View previous reviews"
             className="reviews-carousel-arrow"
@@ -96,9 +96,27 @@ export function Reviews() {
           >
             <ArrowLeft />
           </button>
-          <span style={{ fontWeight: 500, letterSpacing: "0.05em" }}>
-            {page + 1} / {maxPage + 1}
-          </span>
+          {/* Bubbles Carousel Indicator */}
+          <div style={{ display: "flex", gap: "0.5rem" }}>
+            {[0, 1].map((bubbleIdx) => (
+              <button
+                key={bubbleIdx}
+                aria-label={`Go to page ${bubbleIdx + 1}`}
+                onClick={() => setPage(bubbleIdx)}
+                style={{
+                  width: "14px",
+                  height: "14px",
+                  borderRadius: "50%",
+                  border: "none",
+                  margin: 0,
+                  background: page === bubbleIdx ? "#333" : "#D9D9D9",
+                  cursor: page === bubbleIdx ? "default" : "pointer",
+                  transition: "background 0.2s",
+                }}
+                disabled={page === bubbleIdx}
+              ></button>
+            ))}
+          </div>
           <button
             aria-label="View next reviews"
             className="reviews-carousel-arrow"
@@ -121,7 +139,7 @@ export function Reviews() {
             <Card key={index} className="review-card">
               <CardContent className="review-card-content">
                 <div className="stars-container">
-                  {[...Array(5)].map((_, i) => (
+                  {[...Array(review.rating)].map((_, i) => (
                     <Star key={i} className="star-icon" />
                   ))}
                 </div>
