@@ -1,0 +1,100 @@
+/* Trusted By Section */
+.trustby-section {
+    background-color: #FCF9F8;
+    padding: 48px 0;
+    width: 100%;
+  }
+  
+  /* Tighter gap between "Trusted By..." header and logos, just for this section */
+  .trustby-section .portfolio-header {
+    margin-bottom: 2rem;
+  }
+  
+  .trustby-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .trustby-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .trustby-row-large .trustby-logo-col {
+    flex: 0 0 30%;
+  }
+  
+  .trustby-row-small .trustby-logo-col {
+    flex: 0 0 18%;
+  }
+  
+  .trustby-logo-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  }
+  
+  .trustby-logo {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: filter 0.2s;
+    background: transparent;
+  }
+  
+  .trustby-logo-large {
+    max-height: 160px;
+  }
+  
+  .trustby-logo-small {
+    max-height: 110px;
+  }
+  
+  /* Tablet */
+  @media (max-width: 900px) {
+    .trustby-logo-large,
+    .trustby-logo-small {
+      max-height: 90px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .trustby-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 16px;
+      padding: 0 10px;
+      width: 100%;
+    }
+  
+    .trustby-row-large,
+    .trustby-row-small {
+      display: contents; /* flatten children into grid, ignore row wrapping */
+    }
+  
+    .trustby-logo-col {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+  
+    .trustby-logo {
+      width: auto;
+      height: 100%;
+      max-width: 100%;
+      max-height: none;
+      object-fit: contain;
+    }
+  }
